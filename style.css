@@ -425,7 +425,7 @@ header .song_side::before {
     position: absolute;
     width: 75%;
     height: 250px;
-    background: url(bg2.png);
+    background: url(bg.png);
     background-size: auto;
     background-position: 70% center;
     background-repeat: no-repeat;

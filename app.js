@@ -1,10 +1,10 @@
-const music = new Audio('audio/Alan_Walker.mp3');
+const music = new Audio('audio/on_my_way.mp3');
 // music.play(); 
 
 const songs = [
     {
         id: 1,
-        songsName: `On My Way<br><div class="subtitle">Alan Walker</div>`,
+        songsName: `On My Way<br><div class="subtitle">Alan Walker, Sabrina Carpenter & Frruko</div>`,
         poster: "img/1.jpg"
     },
     {
@@ -49,7 +49,7 @@ const songs = [
     },
     {
         id: 10,
-        songsName: `Sab Tera<br><div class="subtitle">Armaan Malik</div>`,
+        songsName: `Sab Tera<br><div class="subtitle">Sanjeev-Chturvedi</div>`,
         poster: "img/10.jpg"
     },
     {
@@ -84,7 +84,7 @@ const songs = [
     },
     {
         id: 17,
-        songsName: `Halka halka suroor<br><div class="subtitle">Rahat Fateh Ali Khan</div>`,
+        songsName: `Halka halka suroor<br><div class="subtitle">Fenny-Khan</div>`,
         poster: "img/17.jpg"
     },
     {
@@ -107,7 +107,18 @@ const songs = [
 
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
     e.getElementsByTagName('img')[0].src = songs[i].poster;
+    e.getElementsByTagName('h5')[0].innerHTML = songs[i].songsName;
 })
+
+// let masterPlay = document.getElementById('masterPlay');
+
+// masterPlay.addEventListener('click', () => {
+//     if (music.paused || music.currentTime <= 0) {
+//         music.play();
+//     } else {
+//         // music.pause();
+//     }
+// }) 
 
 let pop_song_left = document.getElementById('pop_song_left');
 let pop_song_right = document.getElementById('pop_song_right');

@@ -110,15 +110,45 @@ Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
     e.getElementsByTagName('h5')[0].innerHTML = songs[i].songsName;
 })
 
-// let masterPlay = document.getElementById('masterPlay');
+let masterPlay = document.getElementById('masterPlay');
+let wave = document.getElementById('wave');
 
-// masterPlay.addEventListener('click', () => {
-//     if (music.paused || music.currentTime <= 0) {
-//         music.play();
-//     } else {
-//         // music.pause();
-//     }
-// }) 
+masterPlay.addEventListener('click', () => {
+    if (music.paused || music.currentTime <= 0) {
+        music.play(); 
+        wave.classList.add('active1');
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
+    } else {
+        music.pause();
+        wave.classList.remove('active1');
+        masterPlay.classList.add('bi-play-fill');
+        masterPlay.classList.remove('bi-pause-fill');
+    }
+})  
+
+let index = 0;
+// index++;
+// console.log(index);
+
+Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
+    e.addEventListener('click', (el)=>{
+        index = el.target.id;
+        // console.log(index);
+        music.src = `audio/${index}.mp3`;
+        music.play();
+    })
+})
+
+
+
+
+
+
+
+
+
+
 
 let pop_song_left = document.getElementById('pop_song_left');
 let pop_song_right = document.getElementById('pop_song_right');

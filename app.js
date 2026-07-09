@@ -1,4 +1,4 @@
-const music = new Audio('audio/on_my_way.mp3');
+const music = new Audio('audio/1.mp3');
 // music.play(); 
 
 const songs = [
@@ -127,19 +127,46 @@ masterPlay.addEventListener('click', () => {
     }
 })  
 
+
+const makeAllBackground = () => {
+    Array.from(document.getElementsByClassName('songItem')).forEach((el)=>{
+        el.style.background = "rgb(105, 105, 105, .0)"
+    })
+}
+
+
 let index = 0;
 // index++;
 // console.log(index);
+
+let poster_master_play = document.getElementById('poster_master_play');
+let title = document.getElementById('title');
 
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     e.addEventListener('click', (el)=>{
         index = el.target.id;
         // console.log(index);
         music.src = `audio/${index}.mp3`;
+        poster_master_play.src = `img/${index}.jpg`;
         music.play();
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
+
+        let songTitles = songs.filter((els) => {
+            return els.id == index;
+        });
+
+        songTitles.forEach(elss => {
+            let { songsName } = elss;
+            // let { songsName, poster } = elss;   from this line we can also access the poster of the song
+            title.innerHTML = songsName;
+            // poster_master_play.src = poster;   from this line we can also access the poster of the song
+        });
+
+        makeAllBackground();
+        Array.from(document.getElementsByClassName('songItem'))[index-1].style.background = 'rgb(105, 105, 105, .1)';
     })
 })
-
 
 
 

@@ -135,7 +135,7 @@ header .menu_side .menu_song li {
     transition: .3s linear;
 }
 
-header .menu_side .menu_song li {
+header .menu_side .menu_song li:hover {
     background: rgb(105, 105, 105, .1);
 }
 

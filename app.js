@@ -4,7 +4,7 @@ const music = new Audio('audio/1.mp3');
 const songs = [
     {
         id: 1,
-        songsName: `On My Way<br><div class="subtitle">Alan Walker, Sabrina Carpenter & Frruko</div>`,
+        songsName: `On My Way<br><div class="subtitle">Alan Walker</div>`,
         poster: "img/1.jpg"
     },
     {
@@ -14,7 +14,7 @@ const songs = [
     },
     {
         id: 3,
-        songsName: `Tere Bina Beswadi-Beswadi Ratiyan<br><div class="subtitle">A.R. Rahman</div>`,
+        songsName: `Tere Bina Beswadi<br><div class="subtitle">A.R. Rahman</div>`,
         poster: "img/3.jpg"
     },
     {
@@ -128,6 +128,13 @@ masterPlay.addEventListener('click', () => {
 })  
 
 
+const makeAllplays = () => {
+    Array.from(document.getElementsByClassName('playListPlay')).forEach((el)=>{
+        el.classList.add('bi-play-circle-fill');
+        el.classList.remove('bi-pause-circle-fill'); 
+    })
+}
+
 const makeAllBackground = () => {
     Array.from(document.getElementsByClassName('songItem')).forEach((el)=>{
         el.style.background = "rgb(105, 105, 105, .0)"
@@ -165,11 +172,33 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
 
         makeAllBackground();
         Array.from(document.getElementsByClassName('songItem'))[index-1].style.background = 'rgb(105, 105, 105, .1)';
+        makeAllplays();
+        el.target.classList.remove("bi-play-circle-fill");
+        el.target.classList.add("bi-pause-circle-fill");
+        wave.classList.add('active1');
     })
 })
 
 
 
+let currentStart  = document.getElementById('currentStart');
+let currentEnd  = document.getElementById('currentEnd');
+
+music.addEventListener('timeupdate', ()=>{
+    let music_crr = music.currentTime;
+    let music_dur = music.duration;
+    // console.log(music_curr);
+    // console.log(music_dur);
+
+    let min1 = Math.floor(music_dur/60);
+    let sec1 = Math.floor(music_dur % 60);
+    // console.log(min1);
+
+    if (sec1 < 10) {
+        sec1 = `0${sec1}`;
+    }
+    currentEnd.innerText = `${min1}:${sec1}`;
+})
 
 
 

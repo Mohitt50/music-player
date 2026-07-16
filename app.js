@@ -147,6 +147,7 @@ let index = 0;
 // console.log(index);
 
 let poster_master_play = document.getElementById('poster_master_play');
+let download_music = document.getElementById('download_music');
 let title = document.getElementById('title');
 
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
@@ -158,6 +159,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
+        download_music.href = `audio/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -168,7 +170,9 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
             // let { songsName, poster } = elss;   from this line we can also access the poster of the song
             title.innerHTML = songsName;
             // poster_master_play.src = poster;   from this line we can also access the poster of the song
+            download_music.setAttribute('download', songsName); 
         });
+
 
         makeAllBackground();
         Array.from(document.getElementsByClassName('songItem'))[index-1].style.background = 'rgb(105, 105, 105, .1)';

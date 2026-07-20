@@ -4,104 +4,104 @@ const music = new Audio('audio/1.mp3');
 const songs = [
     {
         id: 1,
-        songsName: `On My Way<br><div class="subtitle">Alan Walker</div>`,
-        poster: "img/1.jpg"
+        songsName: `Apna bana le<br><div class="subtitle">Arijit Singh</div>`,
+        poster: "img/arijit/1.jpg"
     },
     {
         id: 2,
-        songsName: `Tainu Khabar Nahi<br><div class="subtitle">Arijit Singh</div>`,
-        poster: "img/2.jpg"
+        songsName: `Kalank<br><div class="subtitle">Arijit Singh</div>`,
+        poster: "img/arijit/2.jpg"
     },
     {
         id: 3,
-        songsName: `Tere Bina Beswadi<br><div class="subtitle">A.R. Rahman</div>`,
-        poster: "img/3.jpg"
+        songsName: `Kesariya<br><div class="subtitle">Arijit Singh</div>`,
+        poster: "img/arijit/3.jpg"
     },
     {
         id: 4,
-        songsName: `Nazm Nazm<br><div class="subtitle">Ayushman Khurana</div>`,
-        poster: "img/4.jpg"
+        songsName: `Kheriyat<br><div class="subtitle">Arijit Singh</div>`,
+        poster: "img/arijit/4.jpg"
     },
     {
         id: 5,
-        songsName: `Payal<br><div class="subtitle">Honey Singh</div>`,
-        poster: "img/5.jpg"
+        songsName: `Tujhme khoya rahun<br><div class="subtitle">Arijit Singh</div>`,
+        poster: "img/arijit/5.jpg"
     },
     {
         id: 6,
-        songsName: `Besabriyan<br><div class="subtitle">Sushant Singh Rajput</div>`,
-        poster: "img/6.jpg"
+        songsName: `Samjhanva<br><div class="subtitle">Arijit Singh</div>`,
+        poster: "img/arijit/6.jpg"
     },
     {
         id: 7,
-        songsName: `Azul<br><div class="subtitle">Guru Randhava</div>`,
-        poster: "img/7.jpg"
+        songsName: `Tera fitoor<br><div class="subtitle">Arijit Singh</div>`,
+        poster: "img/arijit/7.jpg"
     },
     {
         id: 8,
-        songsName: `Puchada hi nahi<br><div class="subtitle">Neha Kakkar</div>`,
-        poster: "img/8.jpg"
+        songsName: `Ve-Kamleya<br><div class="subtitle">Arijit Singh</div>`,
+        poster: "img/arijit/8.jpg"
     },
     {
         id: 9,
-        songsName: `Raataan Lambiya<br><div class="subtitle">Jubin Nautiyal</div>`,
-        poster: "img/9.jpg"
+        songsName: `Tere sang<br><div class="subtitle">Arijit Singh</div>`,
+        poster: "img/arijit/9.jpg"
     },
-    {
-        id: 10,
-        songsName: `Sab Tera<br><div class="subtitle">Sanjeev-Chturvedi</div>`,
-        poster: "img/10.jpg"
-    },
-    {
-        id: 11,
-        songsName: `Soniyo<br><div class="subtitle">Sonu Nigam</div>`,
-        poster: "img/11.jpg"
-    },
-    {
-        id: 12,
-        songsName: `Tu jane na<br><div class="subtitle">Atif Aslam</div>`,
-        poster: "img/12.jpg"
-    },
-    {
-        id: 13,
-        songsName: `Tum hi ho bandhu<br><div class="subtitle">Neeraj Shridhar</div>`,
-        poster: "img/13.jpg"
-    },
-    {
-        id: 14,
-        songsName: `Tera fitoor<br><div class="subtitle">Arijit Singh</div>`,
-        poster: "img/14.jpg"
-    },
-    {
-        id: 15,
-        songsName: `Vaaste<br><div class="subtitle">Dhvani Bhanushali</div>`,
-        poster: "img/15.jpg"
-    },
-    {
-        id: 16,
-        songsName: `Pal pal dil ke paas<br><div class="subtitle">Arijit Singh</div>`,
-        poster: "img/16.jpg"
-    },
-    {
-        id: 17,
-        songsName: `Halka halka suroor<br><div class="subtitle">Fenny-Khan</div>`,
-        poster: "img/17.jpg"
-    },
-    {
-        id: 18,
-        songsName: `Give me some shine<br><div class="subtitle">Suraj Jagan</div>`,
-        poster: "img/18.jpg"
-    },
-    {
-        id: 19,
-        songsName: `Bairan<br><div class="subtitle">Banjaare</div>`,
-        poster: "img/19.jpg"
-    },
-    {
-        id: 20,
-        songsName: `Jeene laga hun<br><div class="subtitle">Atif Aslam</div>`,
-        poster: "img/20.jpg"
-    },
+    // {
+    //     id: 10,
+    //     songsName: `Sab Tera<br><div class="subtitle">Sanjeev-Chturvedi</div>`,
+    //     poster: "img/10.jpg"
+    // },
+    // {
+    //     id: 11,
+    //     songsName: `Soniyo<br><div class="subtitle">Sonu Nigam</div>`,
+    //     poster: "img/11.jpg"
+    // },
+    // {
+    //     id: 12,
+    //     songsName: `Tu jane na<br><div class="subtitle">Atif Aslam</div>`,
+    //     poster: "img/12.jpg"
+    // },
+    // {
+    //     id: 13,
+    //     songsName: `Tum hi ho bandhu<br><div class="subtitle">Neeraj Shridhar</div>`,
+    //     poster: "img/13.jpg"
+    // },
+    // {
+    //     id: 14,
+    //     songsName: `Tera fitoor<br><div class="subtitle">Arijit Singh</div>`,
+    //     poster: "img/14.jpg"
+    // },
+    // {
+    //     id: 15,
+    //     songsName: `Vaaste<br><div class="subtitle">Dhvani Bhanushali</div>`,
+    //     poster: "img/15.jpg"
+    // },
+    // {
+    //     id: 16,
+    //     songsName: `Pal pal dil ke paas<br><div class="subtitle">Arijit Singh</div>`,
+    //     poster: "img/16.jpg"
+    // },
+    // {
+    //     id: 17,
+    //     songsName: `Halka halka suroor<br><div class="subtitle">Fenny-Khan</div>`,
+    //     poster: "img/17.jpg"
+    // },
+    // {
+    //     id: 18,
+    //     songsName: `Give me some shine<br><div class="subtitle">Suraj Jagan</div>`,
+    //     poster: "img/18.jpg"
+    // },
+    // {
+    //     id: 19,
+    //     songsName: `Bairan<br><div class="subtitle">Banjaare</div>`,
+    //     poster: "img/19.jpg"
+    // },
+    // {
+    //     id: 20,
+    //     songsName: `Jeene laga hun<br><div class="subtitle">Atif Aslam</div>`,
+    //     poster: "img/20.jpg"
+    // },
 ]
 
 
@@ -154,12 +154,12 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     e.addEventListener('click', (el)=>{
         index = el.target.id;
         // console.log(index);
-        music.src = `audio/${index}.mp3`;
-        poster_master_play.src = `img/${index}.jpg`;
+        music.src = `audio/arijit/${index}.mp3`;
+        poster_master_play.src = `img/arijit/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
-        download_music.href = `audio/${index}.mp3`;
+        download_music.href = `audio/arijit/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -268,8 +268,8 @@ back.addEventListener('click', ()=>{
         index = Array.from(document.getElementsByClassName('songItem')).length;
 
     }
-     music.src = `audio/${index}.mp3`;
-        poster_master_play.src = `img/${index}.jpg`;
+     music.src = `audio/arijit/${index}.mp3`;
+        poster_master_play.src = `img/arijit/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
@@ -298,8 +298,8 @@ next.addEventListener('click', ()=>{
     if (index > Array.from(document.getElementsByClassName('songItem')).length) {
         index = 1;
     }
-    music.src = `audio/${index}.mp3`;
-        poster_master_play.src = `img/${index}.jpg`;
+    music.src = `audio/arijit/${index}.mp3`;
+        poster_master_play.src = `img/arijit/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
@@ -393,12 +393,12 @@ const next_music = () => {
         } else {
             index++;
         }
-        music.src = `audio/${index}.mp3`;
-        poster_master_play.src = `img/${index}.jpg`;
+        music.src = `audio/arijit/${index}.mp3`;
+        poster_master_play.src = `img/arijit/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
-        download_music.href = `audio/${index}.mp3`;
+        download_music.href = `audio/arijit/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -423,12 +423,12 @@ const next_music = () => {
 
 const repeat_music = () => {
         index;
-        music.src = `audio/${index}.mp3`;
-        poster_master_play.src = `img/${index}.jpg`;
+        music.src = `audio/arijit/${index}.mp3`;
+        poster_master_play.src = `img/arijit/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
-        download_music.href = `audio/${index}.mp3`;
+        download_music.href = `audio/arijit/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -457,12 +457,12 @@ const random_music = () => {
         } else {
             index = Math.floor((Math.random() * songs.length) + 1);
         }
-        music.src = `audio/${index}.mp3`;
-        poster_master_play.src = `img/${index}.jpg`;
+        music.src = `audio/arijit/${index}.mp3`;
+        poster_master_play.src = `img/arijit/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
-        download_music.href = `audio/${index}.mp3`;
+        download_music.href = `audio/arijit/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;

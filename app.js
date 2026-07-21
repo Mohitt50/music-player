@@ -110,6 +110,11 @@ Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
     e.getElementsByTagName('h5')[0].innerHTML = songs[i].songsName;
 })
 
+// search data start
+let search_results = document.getElementsByClassName('search_result');
+
+// search data end
+
 let masterPlay = document.getElementById('masterPlay');
 let wave = document.getElementById('wave');
 

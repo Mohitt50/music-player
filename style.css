@@ -519,6 +519,7 @@ header .song_side nav .search .search_results .card {
     background: rgb(184, 184, 184, .1);
     margin-bottom: 5px;
     text-decoration: none;
+    display: none;
 }
 
 header .song_side nav .search .search_results .card img{

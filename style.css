@@ -799,9 +799,9 @@ header .song_side .popular_artists .item li img {
 
 /* login style */
 
-header .left_bx1, .right_bx {
+header .left_bx1, .right_bx1  {
     position: relative;
-    width: 65%;
+    width: 60%;
     height: 100%;
     /* border: 1px solid #fff; */
     background: #0b1320;
@@ -811,15 +811,15 @@ header .left_bx1, .right_bx {
 }
 
 header .left_bx1 {
-    width: 35%;
+    width: 40%;
     background: #fff;
-    box-shadow: 5px 0px 2px #090f1f;
+    /* box-shadow: 5px 0px 2px #090f1f; */
 }
 
 header .left_bx1 .content{
     width: 75%;
     height: auto;
-    border: 1px solid #000;
+    border: none;
     padding: 25px 20px;
     background: #fff;
     color: black;
@@ -853,4 +853,38 @@ header .left_bx1 .content .submit {
     background: #111727;
     width: 100%;
     cursor: pointer;
+}
+
+header .left_bx1 .content .check {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+} 
+
+header .left_bx1 .content .check span {
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+header .left_bx1 .content p {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 13px;
+} 
+
+header .left_bx1 .content p a{
+    text-decoration: none;
+    color: #5adae0;
+    font-weight: bold;
+}
+
+header .right_bx1 h3{
+    position: absolute;
+    background: #5adae0;
+    color: #000;
+    right: 0px;
+    bottom: 20px;
+    padding: 3px 10px;
+    border: 5px 0px 0px 5px;
+    font-size: 13px;
 }

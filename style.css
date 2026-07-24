@@ -793,3 +793,64 @@ header .song_side .popular_artists .item li img {
     height: 100%;
     border-radius: 50%;
 }
+
+
+
+
+/* login style */
+
+header .left_bx1, .right_bx {
+    position: relative;
+    width: 65%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    background: #0b1320;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .left_bx1 {
+    width: 35%;
+    background: #fff;
+    box-shadow: 5px 0px 2px #090f1f;
+}
+
+header .left_bx1 .content{
+    width: 75%;
+    height: auto;
+    border: 1px solid #000;
+    padding: 25px 20px;
+    background: #fff;
+    color: black;
+}
+
+header .left_bx1 .content .card{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header .left_bx1 .content .card label {
+    font-size: 14px;
+}
+
+header .left_bx1 .content .card input {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid rgb(154, 154, 154);
+    background: rgb(238, 238, 238);
+    margin-top: 5px;
+}
+
+header .left_bx1 .content .submit {
+    margin-top: 30px;
+    padding: 8px 20px;
+    color: #fff;
+    background: #111727;
+    width: 100%;
+    cursor: pointer;
+}

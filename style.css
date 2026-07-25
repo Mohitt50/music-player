@@ -821,7 +821,7 @@ header .left_bx1 .content{
     height: auto;
     border: none;
     padding: 25px 20px;
-    background: #fff;
+    /* background: #fff; */
     color: black;
 }
 
